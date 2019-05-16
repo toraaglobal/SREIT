@@ -17,6 +17,19 @@ library(rpart.plot)  # plot tree-structured model information
 library(lattice)  # statistical graphics
 library(cvTools)  # cross-validation tools including rmspe 
 
+
+#library(tidyverse)
+library(ggplot2)
+library(ggmap)
+library(readxl)
+library(zipcode)
+
+
+library(plotly)
+packageVersion('plotly')
+
+
+
 ```
 
 ## Read Data
@@ -56,41 +69,77 @@ head(temp)
 
 ```
 
-## viz
-
 ```{r}
-library(plotly)
-packageVersion('plotly')
-
-```
-
-## group by metro
-```{r}
-
-# NOT RUN {
-df_metro <- temp %>% group_by(Metro)
-
-# grouping doesn't change how the data looks (apart from listing
-# how it's grouped):
-df_metro
-
-# It changes how it acts with the other dplyr verbs:
-df_metro %>% summarise(
-  ValueMean = mean(Values)
-)
-
-head(df_metro)
+df <- temp
+colnames(df)
 
 ```
 
 
 ```{r}
+data("zipcode")
 
+dfzip <- data.frame(zipcode)
+
+head(dfzip)
+
+```
+
+merge the two dataframe
+
+```{r}
+df_merge  <- merge(df, dfzip, by.x='RegionName', by.y='zip')
+
+head(df_merge)
+
+```
+
+```{r}
+write.csv(df_merge,'single_family_with_geo.csv')
+```
+
+
+create a dataframe with full state name and state abbreviation
+
+```{r}
+dfstate <- data.frame(state.abb,state.name)
+colnames(dfstate) <- c('state','statename')
+head(dfstate)
+
+```
+
+Merge the state dataframe
+```{r}
+df_clean <- merge(df_merge, dfstate, by.x ='State', by.y='state')
+
+head(df_clean)
 
 ```
 
 
+Write the clean data to csv
+```{r}
+write.csv(df_clean,'single_family_with_geo.csv')
+```
 
+
+Convert state to lower case . ggmap works with lowercase
+
+```{r}
+
+df_clean$statename <- tolower(df_clean$statename)
+df_clean$city <- tolower(df_clean$city)
+head(df_clean)
+
+```
+
+
+Map
+
+```{r}
+us <- map_data('state')
+head(us)
+```
 
 
 
