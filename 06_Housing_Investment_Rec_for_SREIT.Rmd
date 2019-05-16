@@ -1,0 +1,98 @@
+---
+title: "Housing Investment Reccommendation for SREIT"
+author: "Tajudeen Abdulazeez"
+date: "May 15, 2019"
+output: html_document
+---
+
+## Load Packages
+```{r load-packages}
+library(ggplot2)
+library(maps)  # making making 
+library(mapproj)  # projections for map making
+library(spgwr)  # spatially-weighted regression
+library(rpart)  # tree-structured modeling
+library(randomForest)  # random forests
+library(rpart.plot)  # plot tree-structured model information
+library(lattice)  # statistical graphics
+library(cvTools)  # cross-validation tools including rmspe 
+
+```
+
+## Read Data
+```{r load-data}
+
+df <- read.csv('single_family_prep.csv')
+head(df,3)
+
+```
+
+## Dataframe summary
+```{r}
+summary(df)
+```
+
+
+## Data type conversion
+```{r data-type-conversion}
+
+df$RegionID <- as.factor(df$RegionID)
+df$RegionName <- as.factor(df$RegionName)
+df$SizeRank <- as.ordered(df$SizeRank)
+df$Date <- as.Date(df$Date)
+
+summary(df)
+```
+
+
+## create a new column , Year and Month
+```{r}
+temp <- df
+
+temp[, "year"] <- format(temp[,"Date"], "%Y")
+temp[, "month"] <- format(temp[,"Date"], "%m")
+
+head(temp)
+
+```
+
+## viz
+
+```{r}
+library(plotly)
+packageVersion('plotly')
+
+```
+
+## group by metro
+```{r}
+
+# NOT RUN {
+df_metro <- temp %>% group_by(Metro)
+
+# grouping doesn't change how the data looks (apart from listing
+# how it's grouped):
+df_metro
+
+# It changes how it acts with the other dplyr verbs:
+df_metro %>% summarise(
+  ValueMean = mean(Values)
+)
+
+head(df_metro)
+
+```
+
+
+```{r}
+
+
+```
+
+
+
+
+
+
+
+
