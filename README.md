@@ -8,7 +8,7 @@ The top 20 zip codes with the highest rate of annual return is also explored to 
 The zip code that in a University town and the annual rate of return for real estate for each zip code is considered in making informative recommendation to SREIT. The trend and the level of volatility is also considered and how tolerance to recession in making appropriate recommendations, taken into consideration the risk factors.
 The top three zip codes for real estate investment is recommended to SREIT and the details analysis and justification is included in this report.
 
-[Clich here for the Analysis Report]()
+[Clich here for the Analysis Report](https://github.com/toraaglobal/SREIT/blob/master/lab2_Abdulazeez_Tajudeen.pdf)
 
 **Annual Rate of Return**
 * 66223: 6.2%
