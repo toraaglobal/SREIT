@@ -14,5 +14,4 @@ The top three zip codes for real estate investment is recommended to SREIT and t
 ![_ ](https://github.com/toraaglobal/SREIT/blob/master/metro.png)
 
 
-
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZGY2MWVmNzMtN2M5YS00OGUyLThjZmYtYzNiMjNmYTM2NTRjIiwidCI6IjQyNzhhNDAyLTFhOWUtNGViOS04NDE0LWZmYjU1YTVmY2YxZSIsImMiOjN9" frameborder="0" allowFullScreen="true"> </iframe>
+<!--<src="https://app.powerbi.com/view?r=eyJrIjoiZGY2MWVmNzMtN2M5YS00OGUyLThjZmYtYzNiMjNmYTM2NTRjIiwidCI6IjQyNzhhNDAyLTFhOWUtNGViOS04NDE0LWZmYjU1YTVmY2YxZSIsImMiOjN9"  -->
