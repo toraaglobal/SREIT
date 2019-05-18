@@ -24,4 +24,4 @@ Mean Square Error by Zip
 
 ![ _ ](https://github.com/toraaglobal/SREIT/blob/master/powerBI.jpg)
 
-
+![_ ](https://app.powerbi.com/view?r=eyJrIjoiZGY2MWVmNzMtN2M5YS00OGUyLThjZmYtYzNiMjNmYTM2NTRjIiwidCI6IjQyNzhhNDAyLTFhOWUtNGViOS04NDE0LWZmYjU1YTVmY2YxZSIsImMiOjN9)
