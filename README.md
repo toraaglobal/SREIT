@@ -10,6 +10,16 @@ The top three zip codes for real estate investment is recommended to SREIT and t
 
 **[Clich here for the Analysis Report](https://github.com/toraaglobal/SREIT/blob/master/lab2_Abdulazeez_Tajudeen.pdf)**
 
+**Zid codes 66223, 73003 and 37062 are reccommended based on the following:**
+
+1.	They are among the top 20 zips with the highest rate of annual return
+1.	The draw down or noise is minimal
+1.	They are less affected by recession
+1.	They are in a strong uptrend
+1.	The volatility is very low and with a consistent increase in values
+1.	The Upper and lower margin for the future forecast is very tight with high level of accuracy.
+
+
 **Annual Rate of Return**
 * 66223: 6.2%
 * 73003: 5.4%
