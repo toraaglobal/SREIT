@@ -13,3 +13,10 @@ The top three zip codes for real estate investment is recommended to SREIT and t
 **The trend for the median housing values of metro where the reccommended zip codes are located.**
 ![_ ](https://github.com/toraaglobal/SREIT/blob/master/metro.png)
 
+**The Geographical Location of the Metro where zips are selected for investment Reccommendation in Real estate**
+![ _ ](https://github.com/toraaglobal/SREIT/blob/master/powerBI.jpg)
+
+**Annual Rate of Return **
+* 66223: 6.2%
+* 73003: 5.4%
+* 37062: 6.5%
